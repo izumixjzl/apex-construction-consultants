@@ -57,6 +57,7 @@
 
         <div class="phase-grid">
             <div class="phase-card">
+                <img src="{{ asset('images/phase-planning.jpg') }}" alt="Consultant reviewing construction blueprints" class="phase-image" loading="lazy">
                 <div class="phase-number">1</div>
                 <h3>Pre-Construction Planning</h3>
                 <p>We catch the errors that cost the most before a single dollar is committed.</p>
@@ -67,6 +68,7 @@
                 </ul>
             </div>
             <div class="phase-card">
+                <img src="{{ asset('images/phase-oversight.jpg') }}" alt="Crew working on rebar at an active jobsite" class="phase-image" loading="lazy">
                 <div class="phase-number">2</div>
                 <h3>On-Site Execution &amp; Oversight</h3>
                 <p>Boots-on-the-ground oversight that keeps crews accountable and inspectors satisfied.</p>
@@ -77,6 +79,7 @@
                 </ul>
             </div>
             <div class="phase-card">
+                <img src="{{ asset('images/phase-trade.jpg') }}" alt="Electrician inspecting a wiring panel" class="phase-image" loading="lazy">
                 <div class="phase-number">3</div>
                 <h3>Specialized Trade Consulting</h3>
                 <p>Technical expertise when a project's outcome depends on getting the facts right.</p>

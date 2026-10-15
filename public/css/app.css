@@ -54,9 +54,11 @@ a { color: inherit; text-decoration: none; }
 
 /* Hero */
 .hero {
-  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 60%, var(--steel) 100%);
+  background:
+    linear-gradient(90deg, rgba(16,35,61,.97) 0%, rgba(16,35,61,.92) 40%, rgba(16,35,61,.45) 70%, rgba(16,35,61,.15) 100%),
+    url('/images/hero-site.jpg') right center / cover no-repeat;
   color: #fff;
-  padding: 88px 0 96px;
+  padding: 120px 0 128px;
 }
 .hero .eyebrow {
   text-transform: uppercase;
@@ -66,8 +68,8 @@ a { color: inherit; text-decoration: none; }
   font-weight: 700;
   margin-bottom: 14px;
 }
-.hero h1 { color: #fff; font-size: 44px; max-width: 760px; }
-.hero p.lead { font-size: 19px; color: #cfd8e2; max-width: 620px; margin-bottom: 32px; }
+.hero h1 { color: #fff; font-size: 44px; max-width: 580px; }
+.hero p.lead { font-size: 18px; color: #cfd8e2; max-width: 520px; margin-bottom: 32px; }
 .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
 
 .btn {
@@ -103,7 +105,15 @@ section { padding: 80px 0; }
   border-radius: var(--radius);
   padding: 32px 28px;
   background: #fff;
+  overflow: hidden;
   transition: box-shadow .2s, transform .2s;
+}
+.phase-image {
+  display: block;
+  width: calc(100% + 56px);
+  height: 190px;
+  object-fit: cover;
+  margin: -32px -28px 24px;
 }
 .phase-card:hover { box-shadow: 0 12px 28px rgba(16,35,61,.12); transform: translateY(-4px); }
 .phase-number {
@@ -212,5 +222,6 @@ footer {
   .contact-layout { grid-template-columns: 1fr; }
   .trust-grid { grid-template-columns: repeat(2, 1fr); }
   .hero h1 { font-size: 32px; }
+  .hero { background: linear-gradient(rgba(16,35,61,.88), rgba(16,35,61,.88)), url('/images/hero-site.jpg') center / cover no-repeat; }
   .nav-links { display: none; }
 }
